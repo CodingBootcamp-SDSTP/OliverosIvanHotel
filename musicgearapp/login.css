@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+}
+
+#bg { 
+    background-image: url("music1.jpg");
+    height: 100%; 
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#title {
+	color: orange;
+}
+.admin { 
+	color: white;
+	font-family: Helvetica;
+}
