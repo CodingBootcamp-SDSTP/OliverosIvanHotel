@@ -24,23 +24,6 @@ public class MusicManagerDatabase
 		return(albums);
 	}
 
-public boolean checkUser(String username, String password) {
-	boolean st = false;
-	PreparedStatement ps;
-	ResultSet rs;
-	try {
-		ps = conn.prepareStatement("select * from usertable where username=? and password?");
-		ps.setString(1, username);
-		ps.setString(2, password);
-		rs = ps.executeQuery();
-		st = rs.next();
-	}
-	catch(Exception e) {
-		e.printStackTrace();
-	}
-	return(st);
-}
-
 	public boolean readFromDB(Connection conn) {
 		Statement stmt = null;
 		ResultSet rs = null;
